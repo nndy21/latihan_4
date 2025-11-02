@@ -3,11 +3,11 @@ Andi Nurcahyana/312510201
 
 # 🎲 Latihan 1
 
-# 🎯 Tujuan Program
+#  Tujuan Program
 
 Program ini menghasilkan sejumlah n bilangan acak antara 0 sampai 0.5 (tidak termasuk 0.5) berdasarkan input dari pengguna.
 
-# 🔧 Bagian 1: Import Library
+#  Bagian 1: Import Library
 
 ```python
 
@@ -16,7 +16,7 @@ import random
 
 Mengimpor modul random yang berisi fungsi untuk menghasilkan bilangan acak.
 
-# 📥 Bagian 2: Input Validation dengan Error Handling
+#  Bagian 2: Input Validation dengan Error Handling
 
 ```python
 while True:
@@ -57,7 +57,7 @@ Contoh Error Handling:
     Input: "3" → Valid, lanjut ke program
 ```
 
-# 📊 Bagian 3: Konfirmasi Input
+#  Bagian 3: Konfirmasi Input
 
 ```python
 
@@ -66,7 +66,7 @@ print(f"\nMenampilkan {n} bilangan acak yang lebih kecil dari 0.5:")
 
 Menampilkan pesan konfirmasi dengan jumlah bilangan yang akan digenerate.
 
-# 🔄 Bagian 4: Generator Bilangan Acak
+#  Bagian 4: Generator Bilangan Acak
 
 ```python
 for i in range(n):
@@ -88,7 +88,7 @@ Proses Generasi Bilangan:
     {bilangan_acak:.4f} - Format 4 angka desimal
 ```
 
-# 🎪 Contoh Output Program:
+#  Contoh Output Program:
 
 ```txt
 Masukkan jumlah bilangan acak yang ingin ditampilkan (n): 3
@@ -99,7 +99,7 @@ Bilangan acak ke-2: 0.0891
 Bilangan acak ke-3: 0.4567
 ```
 
-# ⚡ Cara Kerja Random Generation:
+#  Cara Kerja Random Generation:
 
 ```txt
 random.random() menghasilkan bilangan desimal antara:
@@ -120,7 +120,7 @@ Contoh proses:
     Generate: 0.3 → < 0.5 → ✅ gunakan bilangan ini
 ```
 
-# 📊 Tugas 2
+#  Tugas 2
 
 Program ini mensimulasikan perkembangan investasi selama 8 bulan dengan sistem bunga bergulung (compound interest), dimana laba setiap bulan ditambahkan ke modal untuk perhitungan bulan berikutnya.
 ```python
@@ -133,7 +133,7 @@ modal_sekarang = modal_awal
 
     modal_sekarang: Variabel dinamis yang akan berubah setiap bulan seiring dengan penambahan laba
 
-# 📈 Bagian 2: Data Persentase Laba
+#  Bagian 2: Data Persentase Laba
 
 ```python
 
@@ -150,7 +150,7 @@ persentase_laba_per_bulan = [0, 0, 0.01, 0.01, 0.06, 0.06, 0.06, 0.04]
 
     Bulan 8: 4% (sedikit penurunan)
 
-# 🔄 Bagian 3: Proses Simulasi (Loop)
+#  Bagian 3: Proses Simulasi (Loop)
 
 ```python
 
@@ -180,7 +180,7 @@ text
 Modal Baru = Modal Sekarang + Laba Bulan Ini
 ```
 
-# 📊 Bagian 4: Output Detail per Bulan
+#  Bagian 4: Output Detail per Bulan
 
 ```python
 print(f"Bulan ke-{bulan + 1}:")
@@ -206,7 +206,7 @@ Bulan ke-5:
   Modal akhir bulan: Rp107,060,000.00
 ```
 
-# 💰 Bagian 5: Hasil Akhir
+#  Bagian 5: Hasil Akhir
 
 ```python
 
@@ -283,7 +283,7 @@ Return on Investment (ROI): 26.36%
 ```
 
 
-# 💰 Tugas 3
+#  Tugas 3
 
 Program ini mensimulasikan sistem ATM sederhana yang memungkinkan pengguna untuk melakukan tiga fungsi utama: tarik tunai, cek saldo, dan keluar dari sistem.
 
@@ -299,7 +299,7 @@ def atm_simulation():
 
     balance = 1000000: Set saldo awal sebesar Rp 1,000,000
 ```
-# 📋 Bagian 2: Tampilan Awal
+#  Bagian 2: Tampilan Awal
 python
 ```python
 print("Selamat datang di atm sederhana")
@@ -307,7 +307,7 @@ print(f"Saldo anda saat ini : Rp {balance:,.0f}")
 ```
 Menampilkan pesan selamat datang dan saldo awal dengan format Rupiah.
 
-# 🔄 Bagian 3: Loop Menu Utama
+#  Bagian 3: Loop Menu Utama
 ```python
 
 while True:
@@ -318,7 +318,7 @@ while True:
 ```
 Loop infinite yang akan terus menampilkan menu sampai pengguna memilih keluar.
 
-# 💵 Bagian 4: Fitur Tarik Tunai (Opsi 1)
+#  Bagian 4: Fitur Tarik Tunai (Opsi 1)
 python
 ```python
 if choice == '1':
@@ -358,8 +358,8 @@ if choice == '1':
     Cek saldo: Tidak boleh melebihi saldo tersedia
 
     Auto exit: Keluar otomatis jika saldo habis
-
-# 📊 Bagian 5: Fitur Cek Saldo (Opsi 2)
+    
+#  Bagian 5: Fitur Cek Saldo (Opsi 2)
 
 ```python
 
@@ -368,7 +368,7 @@ elif choice == '2':
 ```
 Sangat sederhana - hanya menampilkan saldo terkini.
 
-# 🚪 Bagian 6: Fitur Keluar (Opsi 3)
+# Bagian 6: Fitur Keluar (Opsi 3)
 
 ```python
 
@@ -377,7 +377,7 @@ elif choice == '3':
     sys.exit()
 
 sys.exit() menghentikan program secara keseluruhan.
-⚡ Bagian 7: Error Handling
+ Bagian 7: Error Handling
 python
 
 else:
@@ -385,7 +385,7 @@ else:
 ```
 Menangani input yang tidak valid selain 1, 2, atau 3.
 
-# 🎪 Bagian 8: Menjalankan Program
+#  Bagian 8: Menjalankan Program
 
 ```
 
