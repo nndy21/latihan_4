@@ -1,7 +1,7 @@
 # latihan_4
 Andi Nurcahyana/312510201
 
-# 🎲 Latihan 1
+#  Latihan 1
 
 #  Tujuan Program
 
@@ -287,7 +287,7 @@ Return on Investment (ROI): 26.36%
 
 Program ini mensimulasikan sistem ATM sederhana yang memungkinkan pengguna untuk melakukan tiga fungsi utama: tarik tunai, cek saldo, dan keluar dari sistem.
 
-# 🔧 Bagian 1: Import Library dan Inisialisasi
+# Bagian 1: Import Library dan Inisialisasi
 ```python
 
 import sys
@@ -377,7 +377,7 @@ elif choice == '3':
     sys.exit()
 
 sys.exit() menghentikan program secara keseluruhan.
- Bagian 7: Error Handling
+   Bagian 7: Error Handling
 python
 
 else:
